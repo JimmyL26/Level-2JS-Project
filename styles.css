@@ -1,38 +1,53 @@
 body {
   background-color: black;
-  justify-content: center;
+  text-align: center;
 }
 
-.wrapper {
-  background-color: white;
-  height: 500px;
-  width: 500px;
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  position: absolute;
-  transform: translate(-50%, -50%);
+h1 {
+  color: white;
+  font-size: 75px;
+  margin: 15px;
 }
 
-.grid {
-  display: flex;
-  margin: 25px;
-  padding: 25px;
+.indexContainer {
+  width: 800px;
+  height: auto;
+  margin: auto;
 }
 
 img {
-  width: 50px;
-  transform-style: preserve-3d;
-  transition: transform .5s;
-  backface-visibility: hidden;
-
+  height: auto;
 }
 
-img:active {
-  transform: rotateY(180deg);
+#gate {
+  width: 100%;
+  border: orange solid 10px;
 }
 
-.other {
-  transform: rotateY(180deg);
-  position: absolute;
+a {
+  text-decoration: none;
+  font-size: 50px;
+  color: orange;
+}
+
+p {
+  color: white; 
+  font-size: 50px;
+  margin: 15px;
+}
+
+#run {
+  width: 500px;
+}
+
+#house {
+  width: 900px;
+}
+
+#window {
+  width: 700px;
+}
+
+#livingRoom {
+  width: 900px;
 }
