@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(248, 212, 11);
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10px;
+}
+
+p {
+  font-size: 25px;
+  margin: 10px;
+}
+
+div {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 25px;
+  margin: auto;
+  padding: 25px;
+  width: 600px;
+}
+
+img {
+  border: black solid 3px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
