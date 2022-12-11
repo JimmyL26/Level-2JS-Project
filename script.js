@@ -31,12 +31,12 @@ function selectCard(num) {
     if (select == -1) {
         select = index;
         console.log(select);
-        imgArr[index].src = "images/picture" + randomArr[index] + ".PNG";
+        imgArr[index].src = "images/picture" + randomArr[index] + ".png";
         imgArr[index].removeAttribute("onclick");
     }
     else {
         if (randomArr[index] == randomArr[select]) {
-            imgArr[index].src = "images/picture" + randomArr[index] + ".PNG";
+            imgArr[index].src = "images/picture" + randomArr[index] + ".png";
             imgArr[index].removeAttribute("onclick");
             imgArr[select].removeAttribute("onclick");
             foundArr.push(select);
@@ -44,7 +44,7 @@ function selectCard(num) {
             select = -1;
         }
         else {
-            imgArr[index].src = "images/picture" + randomArr[index] + ".PNG";;
+            imgArr[index].src = "images/picture" + randomArr[index] + ".png";;
             imgArr[index].removeAttribute("onclick");
             
             for (let i = 0; i < 16; i++) {
@@ -52,8 +52,8 @@ function selectCard(num) {
             }
 
             setTimeout(() => {
-                imgArr[select].src="images/picture0.PNG";
-                imgArr[index].src="images/picture0.PNG";
+                imgArr[select].src="images/picture0.png";
+                imgArr[index].src="images/picture0.png";
                 imgArr[select].setAttribute("onclick", "selectCard(" + (select + 1) + ");");
                 imgArr[index].setAttribute("onclick", "selectCard(" + (index + 1) + ");");
                 for (let i = 0; i < 16; i++) {
@@ -89,7 +89,7 @@ function reset() {
     foundArr = []
     score = 0;
     for (let i = 0; i < imgArr.length; i++) {
-        imgArr[i].src = "images/picture0.PNG";
+        imgArr[i].src = "images/picture0.png";
         imgArr[i].setAttribute("onclick", "selectCard(" + (i + 1) + ");");
     }
     display();
